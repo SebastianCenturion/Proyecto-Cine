@@ -1,0 +1,189 @@
+body {
+    background-color: #41465b;
+    color: white;
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: rgb(32, 32, 32);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    box-shadow: 1px 1px 20px 1px rgba(0,0,0,0.75);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logotype {
+    text-shadow: 0px 0px 12px rgba(0,0,0,1);
+    display: flex;
+    height: 55px;
+    width: 140px;
+    margin: 10px;
+    border-radius: 20px 45px 20px 45px;
+-moz-border-radius: 20px 45px 20px 45px;
+-webkit-border-radius: 20px 45px 20px 45px;
+    justify-content: center;
+    align-items: center;
+    border: solid #404c5d 1px;
+    background: rgb(219, 226, 245);
+    background: -moz-linear-gradient(left, rgb(219, 226, 245) 0%, #41465b 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(219,239,245,1)), color-stop(100%, rgba(96,145,159,1)));
+    background: -webkit-linear-gradient(left, rgb(219, 226, 245) 0%, #41465b 100%);
+    background: -o-linear-gradient(left, rgb(219, 226, 245) 0%, #41465b 100%);
+    background: -ms-linear-gradient(left, rgb(219, 226, 245) 0%, #41465b 100%);
+    background: linear-gradient(to right, rgb(219, 226, 245) 0%, #41465b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbeff5', endColorstr='#60919f', GradientType=1 );
+}
+
+.button-header {
+    height: 40px;
+    margin: 5px;
+    width: 150px;
+    background: #333;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Consolas, Courier New, monospace;
+    border: solid #404c5d 1px;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #2e2d2d, #212121);
+    -webkit-box-shadow: -5px -5px 15px #41465b, 5px 5px 15px #41465b,
+      inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+    box-shadow: -5px -5px 15px #41465b, 5px 5px 15px #41465b,
+      inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+  }
+  
+  .button-header:hover {
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  
+  .button-header:active {
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 100ms;
+    transition: 100ms;
+  }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    border: 1px solid #fff4;
+    background-color: #5e6582;
+    margin: 3em;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    margin-top: 10em;
+}
+
+.right-content-nav {
+    display: flex;
+    margin-right: 4em;
+}
+
+.left-content-nav {
+    margin-left: 2em;
+}
+
+.right-content {
+    display: flex;
+    margin-left: 5em;
+    gap: 1em;
+}
+
+
+
+section {
+    border: 1px solid rgba(255, 255, 255, 0.256);
+    background-color: #5e6582;
+    margin: 2em;
+    padding: 3em;
+    border-radius: 0.2em;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    max-width: 70em;
+    margin: auto;
+    gap: 5em;
+    align-items: center;
+    padding: 1em;
+    
+}
+
+.card {
+    display: flex;
+    border: 5px solid rgb(0, 0, 0);
+    padding: 0.3em;
+    border-radius: 0.2em;
+    transition: box-shadow 0.3s ease;
+    width: 15em;
+    height: 20em;
+    flex-direction: column;
+    background-size: cover;
+}
+
+
+.card:hover {
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container-movies {
+    display: flex;
+    gap: 4em;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;  
+}
+
+.title {
+    background-color: #21212176;
+    opacity: 1;
+}
+
+.info {
+    background-color: #21212176;
+    opacity: 0;
+}
+
+.card:hover .info {
+    opacity: 1;
+}
+
+.card .info {
+    transition: 0.5s;
+}
+
+footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    padding-top: 2em;
+    margin-bottom: 1em;
+}
